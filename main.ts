@@ -1,6 +1,6 @@
 controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
     animation.runImageAnimation(
-    nena,
+    nen,
     assets.animation`nena-animation-up`,
     500,
     false
@@ -8,15 +8,15 @@ controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
 })
 controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
     animation.runImageAnimation(
-    nena,
-    assets.animation`nena-animation-left`,
+    nen,
+    assets.animation`nen-animation-left`,
     500,
     false
     )
 })
 controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
     animation.runImageAnimation(
-    nena,
+    nen,
     assets.animation`nena-animation-right`,
     500,
     false
@@ -24,12 +24,13 @@ controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
 })
 controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
     animation.runImageAnimation(
-    nena,
-    assets.animation`nena-animation-down`,
+    nen,
+    assets.animation`nen-animation-down`,
     500,
     false
     )
 })
-let nena: Sprite = null
-nena = sprites.create(assets.image`nena-front`, SpriteKind.Player)
-controller.moveSprite(nena)
+let nen: Sprite = null
+scene.setBackgroundColor(1)
+nen = sprites.create(assets.image`nen-front`, SpriteKind.Player)
+controller.moveSprite(nen)
